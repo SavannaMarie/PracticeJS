@@ -1,3 +1,5 @@
+
+
 /*
         Javascript Practice Exercises
 --------------------------------------------
@@ -17,8 +19,7 @@ function numberCheck(x, y) {
 
 }
 
-// Write a JS program to get the extension
-// of a filename
+// Write a JS program to get the extension of a filename
 
 function getFileName(str){
     return str.slice(str.lastIndexOf("."));
