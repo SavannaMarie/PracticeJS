@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Viga&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
+body {
+    background-image: url("../img/coffeebeans.jpg");
+    background-size: 100vw;
+    background-attachment: fixed;
+    font-family: 'Viga', sans-serif;
+}
+.logo-coffee{
+    max-height: 70px;
+    max-width: 70px;
+    margin: 0;
+}
+.coffeeNames {
+    font-family: 'Special Elite', cursive;
+    color: #000000;
+    font-size: 28px;
+}
+.roast {
+    color: #000000;
+    font-size: 20px;
+}
+.coffee-container{
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 5px;
+}
+.container-fluid {
+    padding: 25px 25px 5px;
+}
+.nav-bg {
+    background-color: rgba(255, 255, 255, 0.7);
+}
+.slogan {
+    color: #dddddd;
+    text-align: center;
+    font-size: 2.5em;
+    font-weight: bold;
+    font-family: 'Special Elite', cursive;
+    text-shadow:1px 5px 8px #000000, 1px 5px 8px #000000;
+    margin: 0;
+    padding: 0;
+}
+.build {
+    color: #dddddd;
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold;
+    font-family: 'Special Elite', cursive;
+    text-shadow:1px 5px 8px #000000, 1px 5px 8px #000000;
+    padding: 0;
+}
+a{
+    color: #d0d0d0;
+    text-shadow:1px 1px 10px #000000, 1px 1px 10px #000000;
+}
+a:hover{
+    text-decoration: none;
+    color: #341e1a;
+    text-shadow: none;
+    -webkit-transition: 500ms linear 0s;
+    -moz-transition: 500ms linear 0s;
+    -o-transition: 500ms linear 0s;
+    transition: 500ms linear 0s;
+    outline: 0 none;
+}
+.steps {
+    color: #dddddd;
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: 'Special Elite', cursive;
+    text-shadow:1px 0px 15px #000000, 1px 0px 15px #000000;
+    margin-top: 10px;
+    padding-top: 10px;
+    padding-bottom: 0;
+}
+.card-body {
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    max-height: 250px;
+}
+.card-body::-webkit-scrollbar {
+    display: none;
+}
+.cardDisplay {
+    background-color: rgba(255, 255, 255, 0.7);
+}
+.select{
+    font-family: 'Viga', sans-serif;
+    font-size: 18px;
+    border: none;
+}
+.brewButton {
+    background-color: #8b1d31;
+    color: white;
+    font-size: 15px;
+    padding: 5px;
+}
+.cardText {
+    padding: 5px 5px 0;
+    margin-bottom: 0;
+}
+.cardTextSmall {
+    font-size: 5px;
+}
+.scrolling-wrapper {
+    width: 80vw;
+    height: 130px;
+    overflow-x: auto;
+    white-space: nowrap;
+    background-color: white;
+    margin-bottom: 10px;
+    opacity: 80%;
+}
+.card {
+    display: inline-block;
+    border: none;
+    margin-bottom: 10px;
+}
+.card::-webkit-scrollbar {
+    display: none;
+}
+.costa {
+    max-height: 100px;
+    max-width: 105px;
+    margin-top: 10px;
+    padding: 0 10px 0 10px;
+}
