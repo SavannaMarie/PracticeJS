@@ -40,11 +40,10 @@ var  b4 = document.getElementById('b4');
 b4.addEventListener("click", listener4);
 
 // DOM PRACTICE
-// var background = $('body');
 
 $(document).on('keypress',function(e) {
 var gKey = e.key.toLowerCase();
     if(gKey === 'g') {
-        console.log("You pressed a key!")
+        $('body').css('background', 'purple')
     }
 });
