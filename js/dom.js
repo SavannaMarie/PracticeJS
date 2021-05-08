@@ -8,7 +8,7 @@
 // console.log(headerTitle);
 // headerTitle.textContent = "Hello!";
 // headerTitle.innerHTML = '<h3>Hello!</h3>';
-
+//
 // header.style.borderBottom = 'solid 3px black'
 
 // var items = document.getElementsByClassName('list-group-item');
@@ -142,6 +142,77 @@
 // container.insertBefore(newDiv, h1);
 //
 //
+
+
+// EVENTS //
+//
+// create event for button click
+// var button = document.getElementById('button').addEventListener
+// ('click', buttonClick);
+//
+// function being passed through the event
+// function buttonClick(event) {
+    // console.log('Button Clicked!');
+    // document.getElementById('header-title').textContent = "Changed!";
+    // document.querySelector('#main').style.backgroundColor = 'blue';
+    // console.log(event);
+    //
+    // console.log(event.target)
+    // console.log(event.target.id);
+    // console.log(event.target.classList);
+    //
+    // console.log(event.type);
+    //
+    // console.log(event.clientX);
+    // console.log(event.clientY)
+    //
+    // console.log(event.offsetX);
+    // console.log(event.offsetY);
+    //
+// }
+
+
+// MOUSE EVENTS
+//
+var button = document.getElementById('button');
+var box = document.getElementById('box');
+var body = document.querySelector('body');
+
+// button.addEventListener('click', runEvent);
+// button.addEventListener('dblclick', runEvent);
+// button.addEventListener('mousedown', runEvent);
+// button.addEventListener('mouseleave', runEvent);
+
+// MOUSEENTER ONLY FOR ELEMENT ITSELF. MOUSEOVER IS FOR ANY INNER ELEMENTS
+// box.addEventListener('mouseenter', runEvent);
+// box.addEventListener('mouseleave', runEvent);
+//
+// box.addEventListener('mouseover', runEvent);
+// box.addEventListener('mouseout', runEvent);
+
+box.addEventListener('mousemove', runEvent);
+
+function runEvent(e){
+    console.log('Event Type: ' + e.type);
+    // output.innerHTML = '<h3>MouseX: ' + e.offsetX + '</h3><h3>MouseY: ' + e.offsetY + '</h3>';
+
+    body.style.backgroundColor = 'rgb('+e.offsetX+', '+e.offsetY+', 40)';
+    box.style.backgroundColor = 'rgb('+e.offsetX+', '+e.offsetY+', 40)';
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
