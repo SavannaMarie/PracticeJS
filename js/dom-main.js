@@ -3,6 +3,7 @@
 var form = document.getElementById('addForm');
 var itemList = document.getElementById('items');
 var filter = document.getElementById('filter');
+var itemInput = document.getElementById('item');
 
 // Events using our variables
 // Form submit event
@@ -14,6 +15,8 @@ itemList.addEventListener('click', removeItem);
 // search event
 filter.addEventListener('keyup', filterItems)
 
+// Key event
+itemInput.addEventListener('keydown', keyEvent);
 
 // Add Item
 function addItem(e) {
@@ -85,8 +88,27 @@ function filterItems(e) {
     });
 }
 
+// keyboard event
+// declare new array outside of function
+var userInput = [];
+// declare array we want to match
+var keyArray = [72, 69, 76, 76, 79];
 
 
+function keyEvent(e) {
+    // if user presses Dkey the backgroundturns purple
+    var dKey = 68;
+    var char = e.char || e.charCode || e.which;
+    // this makes sure to only get last 5 keypresses
+    userInput = userInput.slice(-4);
+    // push keys entered into empty array
+    userInput.push(e.keyCode);
+        if (char === dKey) {
+            document.querySelector('#main').style.backgroundColor = 'rebeccapurple';
+        } else if (userInput.join(" ") === keyArray.join(" ")) {
+            document.querySelector('#main').style.backgroundColor = 'pink';
+        }
+}
 
 
 
