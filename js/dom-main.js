@@ -4,10 +4,7 @@ var form = document.getElementById('addForm');
 var itemList = document.getElementById('items');
 var filter = document.getElementById('filter');
 
-
-
 // Events using our variables
-
 // Form submit event
 form.addEventListener('submit', addItem);
 
@@ -16,9 +13,6 @@ itemList.addEventListener('click', removeItem);
 
 // search event
 filter.addEventListener('keyup', filterItems)
-
-// Clear form event
-form.addEventListener('keyup', clearForm)
 
 
 // Add Item
