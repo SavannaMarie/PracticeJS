@@ -2,6 +2,7 @@
 // console.log(document.all[10]);
 // document.all[10].textContent = "This is a test!!"
 
+
 // console.log(document.getElementById('header-title'))
 // var headerTitle = document.getElementById('header-title');
 // var header = document.getElementById('main-header');
@@ -10,6 +11,7 @@
 // headerTitle.innerHTML = '<h3>Hello!</h3>';
 //
 // header.style.borderBottom = 'solid 3px black'
+
 
 // var items = document.getElementsByClassName('list-group-item');
 // console.log(items);
@@ -23,6 +25,7 @@
 // for (i =0; i < items.length; i++) {
 //     items[i].style.backgroundColor = 'grey'
 // }
+
 
 // get elements by tag name
 // var li = document.getElementsByTagName('li');
@@ -74,7 +77,6 @@
 // }
 
 
-
 // TRAVERSING THE DOM
 // var itemList = document.querySelector('#items');
 // parentnode
@@ -90,10 +92,12 @@
 // console.log(itemList.parentElement.parentElement);
 // console.log(itemList.parentElement.parentElement.parentElement);
 
+
 // childNodes
 // console.log(itemList.children);
 // console.log(itemList.children[1]);
 // itemList.children[1].style.backgroundColor = 'yellow';
+
 
 // firstchild
 // console.log(itemList.firstChild);
@@ -101,8 +105,10 @@
 // console.log(itemList.firstElementChild)
 // itemList.firstElementChild.textContent = "Hello 1"
 
+
 //Next Sibling
 // console.log(itemList.nextElementSibling);
+
 
 // previous sibling
 // console.log(itemList.previousSibling);
@@ -111,27 +117,28 @@
 // itemList.previousElementSibling.style.color = 'grey'
 // console.log(itemList)
 
+
 // create element
 // create a div
-
+//
 // var newDiv = document.createElement('div');
 // console.log(newDiv);
-
+//
 // add class
 // newDiv.className = 'hello';
-
+//
 // add new id
 // newDiv.id = 'hello1';
-
+//
 // add atr
 // newDiv.setAttribute('title', 'hello Div!');
-
+//
 // create new text node
 // var newDivText = document.createTextNode('Hello World!');
-
+//
 // add text to div
 // newDiv.appendChild(newDivText);
-
+//
 // two container classes. we want the one in the header
 // var container = document.querySelector('header .container');
 //
@@ -174,78 +181,53 @@
 
 // MOUSE EVENTS
 //
-var button = document.getElementById('button');
-var box = document.getElementById('box');
+// var button = document.getElementById('button');
+// var box = document.getElementById('box');
 // var body = document.querySelector('body');
-
+//
 // button.addEventListener('click', runEvent);
 // button.addEventListener('dblclick', runEvent);
 // button.addEventListener('mousedown', runEvent);
 // button.addEventListener('mouseleave', runEvent);
-
+//
 // MOUSEENTER ONLY FOR ELEMENT ITSELF. MOUSEOVER IS FOR ANY INNER ELEMENTS
 // box.addEventListener('mouseenter', runEvent);
 // box.addEventListener('mouseleave', runEvent);
 //
 // box.addEventListener('mouseover', runEvent);
 // box.addEventListener('mouseout', runEvent);
-
+//
 // box.addEventListener('mousemove', runEvent);
-
-var itemInput = document.querySelector('input[type="text"]');
-var form = document.querySelector('form');
-var select = document.querySelector('select');
-
+//
+// var itemInput = document.querySelector('input[type="text"]');
+// var form = document.querySelector('form');
+// var select = document.querySelector('select');
+//
 // itemInput.addEventListener('keydown', runEvent);
 // itemInput.addEventListener('keyup', runEvent);
 // itemInput.addEventListener('keypress', runEvent);
-
+//
 // itemInput.addEventListener('focus', runEvent);
 // itemInput.addEventListener('blur', runEvent);
-
+//
 // itemInput.addEventListener('cut', runEvent);
 // itemInput.addEventListener('paste', runEvent);
-
+//
 // itemInput.addEventListener('input', runEvent);
-
+//
 // select.addEventListener('change', runEvent)
 // select.addEventListener('input', runEvent)
-
-form.addEventListener('submit', runEvent);
-
-function runEvent(e){
-    e.preventDefault();
-    console.log('Event Type: ' + e.type);
-
-    console.log(e.target.value);
+//
+// form.addEventListener('submit', runEvent);
+//
+// function runEvent(e){
+//     e.preventDefault();
+//     console.log('Event Type: ' + e.type);
+// //
+//     console.log(e.target.value);
     // document.getElementById('output').innerHTML ='<h3>' + e.target.value + '</h3>';
     // output.innerHTML = '<h3>MouseX: ' + e.offsetX + '</h3><h3>MouseY: ' + e.offsetY + '</h3>';
-
+//
     // document.body.style.backgroundColor = 'rgb('+e.offsetX+', 40, '+e.offsetY+')';
     // box.style.backgroundColor = 'rgb('+e.offsetX+', '+e.offsetY+', 40)';
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// }
