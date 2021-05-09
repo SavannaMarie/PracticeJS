@@ -1,7 +1,12 @@
 "use strict";
-
+// variables
 var form = document.getElementById('addForm');
 var itemList = document.getElementById('items');
+var filter = document.getElementById('filter');
+
+
+
+// Events using our variables
 
 // Form submit event
 form.addEventListener('submit', addItem);
@@ -9,6 +14,11 @@ form.addEventListener('submit', addItem);
 // delete event
 itemList.addEventListener('click', removeItem);
 
+// search event
+filter.addEventListener('keyup', filterItems)
+
+// Clear form event
+form.addEventListener('keyup', clearForm)
 
 
 // Add Item
@@ -44,6 +54,9 @@ function addItem(e) {
 
     // add li to the list
     itemList.appendChild(li);
+
+    // clear the form after submitting
+    document.getElementById('addForm').reset();
 }
 
 // remote item
@@ -58,10 +71,25 @@ function removeItem(e) {
     }
 }
 
-
-
-
-
+// search item
+function filterItems(e) {
+    // convert text to lowercase
+    var text = e.target.value.toLowerCase();
+    // get all LIs
+    var items =itemList.getElementsByTagName('li');
+    // convert to an array
+    Array.from(items).forEach(function (item) {
+        var itemName = item.firstChild.textContent;
+        // if list items match searchbox value (if true)
+        if(itemName.toLowerCase().indexOf(text) !== -1){
+        // display matches
+            item.style.display = 'block';
+        } else {
+        // if false don't display anything
+            item.style.display = 'none';
+        }
+    });
+}
 
 
 
