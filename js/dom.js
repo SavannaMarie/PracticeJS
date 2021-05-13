@@ -231,3 +231,9 @@
     // document.body.style.backgroundColor = 'rgb('+e.offsetX+', 40, '+e.offsetY+')';
     // box.style.backgroundColor = 'rgb('+e.offsetX+', '+e.offsetY+', 40)';
 // }
+
+//settimeout
+// prints every number
+for (let i = 0; i < 10; i++){
+    setTimeout(() => console.log(i));
+}

@@ -103,11 +103,11 @@ function keyEvent(e) {
     userInput = userInput.slice(-4);
     // push keys entered into empty array
     userInput.push(e.keyCode);
-        if (char === dKey) {
-            document.querySelector('#main').style.backgroundColor = 'rebeccapurple';
-        } else if (userInput.join(" ") === keyArray.join(" ")) {
-            document.querySelector('#main').style.backgroundColor = 'pink';
-        }
+    if (char === dKey) {
+        document.querySelector('#main').style.backgroundColor = 'rebeccapurple';
+    } else if (userInput.join(" ") === keyArray.join(" ")) {
+        document.querySelector('#main').style.backgroundColor = 'pink';
+    }
 }
 
 
