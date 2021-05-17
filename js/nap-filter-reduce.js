@@ -362,4 +362,8 @@ let movies = [
 //
 // console.log(firstMovie);
 //
+
+
+
+
 // console.log(restOfMovies);
