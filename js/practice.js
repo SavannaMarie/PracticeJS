@@ -62,3 +62,15 @@ if (hour===0 && prepand===' AM ')
     }
 }
 console.log("Current Time : "+hour + prepand + " : " + minute + " : " + second);
+
+
+//Guess random integer. tells you if youre right or wrong
+
+// Get a random integer from 1 to 10 inclusive
+const num = Math.ceil(Math.random() * 10);
+console.log(num);
+const gnum = prompt('Guess the number between 1 and 10 inclusive');
+if (gnum === num)
+    console.log('Matched');
+else
+    console.log('Not matched, the number was '+gnum);
