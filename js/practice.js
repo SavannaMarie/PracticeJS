@@ -108,4 +108,9 @@ console.log(reverseString("abc"))
 console.log(reverseString("aaabbbcccd"))
 
 
+function isEmptyString(value) {
+    return typeof value === 'string' && value.trim().length === 0;
+}
+
+
 
