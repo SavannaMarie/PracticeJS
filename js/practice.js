@@ -6,7 +6,6 @@
 
  */
 
-
 // Return true if one of the numbers is 100
 // or if the sum of the two numbers is 100
 
@@ -26,7 +25,6 @@ function getFileName(str){
 }
 
 //GET THE DATE FUNCTION
-
 var today = new Date();
 var day = today.getDay();
 var daylist = ["Sunday","Monday","Tuesday","Wednesday ","Thursday","Friday","Saturday"];
@@ -68,19 +66,18 @@ console.log("Current Time : "+hour + prepand + " : " + minute + " : " + second);
 
 // Get a random integer from 1 to 10 inclusive
 const num = Math.ceil(Math.random() * 10);
-console.log(num);
-const gnum = prompt('Guess the number between 1 and 10 inclusive');
+console.log("Correct number: " + num);
+const gnum = prompt('Guess the number between 1 and 10');
 if (gnum === num)
     console.log('Matched');
 else
-    console.log('Not matched, the number was '+gnum);
+    console.log('Not matched, your number was ' + gnum);
 
 //Write a JavaScript program to get the website URL (loading page)
-console.log(document.URL);
+// console.log(document.URL);
 
 
 //Remove a character at the specified position of a given string and return the new string
-
 function remove_character(str, char_pos)
 {
     part1 = str.substring(0, char_pos);
@@ -88,6 +85,27 @@ function remove_character(str, char_pos)
     return (part1 + part2);
 }
 
-console.log(remove_character("Python",0));
-console.log(remove_character("Python",3));
-console.log(remove_character("Python",5));
+// console.log(remove_character("Python",0));
+// console.log(remove_character("Python",3));
+// console.log(remove_character("Python",5));
+
+
+//Reverse a string
+function reverseString(s) {
+    // Create the result list
+    const result = [];
+    // Start from the end of the string and iterate towards the start
+    for (let i = s.length-1; i >= 0; i -= 1) {
+        // Push the current char in the list
+        result.push(s[i]);
+    }
+    // Combine the result in a string
+    return result.join('');
+}
+// Examples
+console.log(reverseString(""))
+console.log(reverseString("abc"))
+console.log(reverseString("aaabbbcccd"))
+
+
+
