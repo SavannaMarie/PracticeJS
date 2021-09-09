@@ -89,6 +89,7 @@ function remove_character(str, char_pos)
 // console.log(remove_character("Python",3));
 // console.log(remove_character("Python",5));
 
+//
 
 //Reverse a string
 function reverseString(s) {
