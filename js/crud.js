@@ -4,10 +4,13 @@ const button = document.getElementById("button");
 const todo = document.getElementById("todo");
 let todoList = [];
 
+ 
+
 form.addEventListener("submit", function (e) {
     e.preventDefault();
     addTodo();
 });
+
 
 function addTodo() {
     // get input
