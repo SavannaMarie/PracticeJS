@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	    <title>Interacting with javascript</title>
+	</head>
+	<body>
+		<script>
+			var response = prompt('Tell me about MYSQL');
+			while (response == "") {
+				response = prompt('Tell me about MYSQL');
+			}
+			alert('Wow, ' + response + ' is a great fact to know. Do you enjoy Java or Javascript more?');
+			alert("Interesting, I agree " + response +" is interesting.");
+			var code = confirm("Hey, do you think " + response + " is easy to learn?")
+			if (code) {
+				alert("wow! I definitely agree");
+			} else {
+				alert("You are right, it's pretty tough.")
+			}
+		</script>
+	</body>
+</html>
